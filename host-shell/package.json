@@ -1,5 +1,5 @@
 {
-  "name": "servicing-shell",
+  "name": "host-shell",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
