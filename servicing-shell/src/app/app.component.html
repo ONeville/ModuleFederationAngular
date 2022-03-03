@@ -1,0 +1,12 @@
+<nav>
+  <ul class="nav-list">
+    <li class="nav-item"><a href="/" target="_blank">
+      <img src="https://images.contentstack.io/v3/assets/blta9b3ebf3686df268/bltd6d4ab46d4a5168f/619e8e75cc846c2bec008565/blueprint-logo-light-bg-desktop.png" />
+    </a>
+    </li>
+    <li class="nav-item"><a routerLink="home">Home</a></li>
+    <li class="nav-item" *ngFor="let microfrontend of mfService.microfrontends"><a
+        [routerLink]="microfrontend.routePath">{{ microfrontend.displayName }}</a></li>
+  </ul>
+</nav>
+<router-outlet></router-outlet>
